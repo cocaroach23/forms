@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="reset.css" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+<body>
+    
+    <div class="questionnaire">
+        <div class="left_content row">
+            <!--<img class="pictures" src="Pictures/mountains-1.jpg" alt="mountains-1">-->
+            
+        </div>
+
+
+
+        <div class="right_content row">
+            
+            <div class="register_block">
+                <h1>Регистриция</h1>
+                <form class="items" action="/url">
+                    <div class="item_reg">
+                        <label for="name">Имя</label>
+                        <input id="name" type="text">
+                    </div>
+
+                    <div class="item_reg">
+                        <label for="surname">Фамилия</label>
+                        <input id="surname" type="text">
+                    </div>
+
+                    <div class="item_reg">
+                        <label for="email">Email</label>
+                        <input id="email" type="email">
+                    </div>
+
+                    <div class="item_reg">
+                        <label for="phone">Телефон</label>
+                        <input id="phone" type="number">
+                    </div>
+
+
+
+                </form>
+            </div>
+
+            <div class="delivery_block">
+                <h2>Адрес доставки</h2>
+                <form class="items" action="/url">
+                    <div class="item_deli">
+                        <label for="country">Страна</label>
+                        <input id="country" type="text">
+                    </div>
+
+                    <div class="item_deli">
+                        <label for="city">Город</label>
+                        <input id="city" type="text">
+                    </div>
+
+                    <div class="item_deli">
+                        <label for="index">Почтовый индекс</label>
+                        <input id="index" type="number">
+                    </div>
+
+                    <div class="item_delivery">
+                        <label for="delivery">Адрес доставки (улица, дом, квартира)</label>
+                        <input id="delivery" type="text">
+                    </div>
+
+
+
+                </form>
+            </div>
+
+            <div class="notification_block">
+                <h2>Уведомлять об акциях и скидках</h2>
+                <p>Мы не будем отправлять спам, но напишем, когда поступят новые товары или будет большая распродажа.
+                </p>
+
+                <form action="/url">
+                    <div class="choice_checkbox">
+                        <div>
+                            <input type="checkbox" id="contactChoice1" name="">
+                            <label for="contactChoice1">По Email</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="contactChoice2" name="">
+                            <label for="contactChoice">По SMS</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="contactChoice3" name="">
+                            <label for="contactChoice3">Push-уведомления в приложении</label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="form_submission">
+                <form action="/url">
+                    <button type="submit">Создать аккаунт</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
