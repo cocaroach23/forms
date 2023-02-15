@@ -1,5 +1,54 @@
 *{
     box-sizing: border-box;
+    
+}
+
+.questionnaire_fon{
+    background-color: #f5f5f5;
+}
+
+
+
+h1{
+    font-size: 24px;
+    font-weight: 700;
+    color: #0ea5e9;
+    
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+p{
+    padding: 5px;
+    font-size: 14px;
+    color: #737373;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+h2{
+    font-size: 20px;
+    font-weight: 600;
+    color: #171717;
+    
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.input_style{
+    border: 1px solid #d4d4d4;
+    border-radius: 5px;
+    height: calc(2.25rem + 2px);
+    
+}
+
+/*.input_style::placeholder{
+    opacity: 0.4;
+}*/
+
+.input_style:focus{
+    
+    border: 2px solid #0284c7;
+    outline: 0;
+    
+
 }
 
 .questionnaire{
@@ -16,7 +65,7 @@
 }
 
 .left_content{
-    width: calc(100% / 2);
+    width: 35%;
     
     
 }
@@ -30,7 +79,8 @@
     display: flex;
     flex-direction: column;
     width: calc(100% / 2);
-    padding: 20px 10px 20px 10px;
+    
+    /*padding: 20px 10px 20px 10px;*/
     
 
 }
@@ -39,18 +89,20 @@
     /*display: flex;*/
     margin-top: 25px;
     margin-bottom: 25px;
-    border-bottom: 1px solid;
+    border-bottom: 1px solid #d4d4d4;
     
 }
 
-h1{
-    padding-bottom: 5px;;
-}
+
 
 .items{
     display: flex;
     flex-wrap: wrap;
+    padding-top: 35px;
     padding-bottom: 25px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #404040;
     
 }
 .item_reg{
@@ -58,7 +110,7 @@ h1{
     width: calc(100% / 2);
     /*justify-content: center;
     align-content: space-around;*/
-    padding: 5px 5px 5px 0px;
+    padding: 5px 15px 20px 0px;
     gap: 5px;
     flex-direction: column;
 }
@@ -68,20 +120,18 @@ h1{
     width: calc(100% / 3);
     /*justify-content: center;
     align-content: space-around;*/
-    padding: 5px 5px 5px 0px;
+    padding: 5px 15px 20px 0px;
     gap: 5px;
     flex-direction: column;
 }
 
 .delivery_block{
-    
+    margin-top: 25px;
     margin-bottom: 25px;
-    border-bottom: 1px solid;
+    border-bottom: 1px solid #d4d4d4;
 }
 
-h2{
-    padding-bottom: 5px;
-}
+
 .item_delivery{
     display: flex;
     width: 100%;
@@ -90,13 +140,36 @@ h2{
     flex-direction: column;
 }
 
+.country_fon{
+    background: #f5f5f5;
+}
+
 .notification_block{
     
     margin-bottom: 25px;
-    border-bottom: 1px solid;
+    border-bottom: 1px solid #d4d4d4;
+}
+
+.checkbox{
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #d4d4d4;
+    background-color: #f5f5f5;
+}
+
+.checkbox:checked{
+    background-color: #0284c7;
+    background-image: url(icons/mark_icon.svg);
+    background-position: center;
+    background-size: contain;
+    
 }
 
 .choice_checkbox{
+    font-size: 16px;
+    font-weight: 600;
+    color: #171717;
     padding-bottom: 25px;
     
 }
@@ -108,4 +181,10 @@ h2{
 
 button{
     width: 100%;
+    border: none;
+    background-color: #0ea5e9;
+    color: #f5f5f5;
+    font-size: 14px;
+    height: calc(2.25rem + 2px);
+    border-radius: 5px;
 }
