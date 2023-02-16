@@ -4,6 +4,8 @@
 }
 
 .questionnaire_fon{
+    display: flex;
+    justify-content: center;
     background-color: #f5f5f5;
     padding: 100px;
 }
@@ -81,11 +83,12 @@ h2{
 }*/
 
 .right_content{
-    display: flex;
+    
+    margin: auto;
     flex-direction: column;
     width: calc(100% / 2);
     
-    padding: 20px 10px 20px 10px;
+    padding: 20px 0px 20px 0px;
     
 
 }
@@ -172,6 +175,7 @@ h2{
 }
 
 .choice_checkbox{
+    margin-top: 30px;
     font-size: 16px;
     font-weight: 600;
     color: #171717;
@@ -182,6 +186,12 @@ h2{
 .form_submission{
     margin-top: 10px;
     margin-bottom: 25px;
+}
+
+.checkbox_form{
+    padding: 10px 0px 10px 0px;
+    color: #404040;
+    font-size: 16px;
 }
 
 button{

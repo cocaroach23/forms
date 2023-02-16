@@ -29,22 +29,22 @@
                         <div class="items">
                             <div class="item_reg">
                                 <label  for="name">Имя</label>
-                                <input class="input_style" id="name" type="text">
+                                <input class="input_style" id="name" name="name" type="text">
                             </div>
 
                             <div class="item_reg">
                                 <label for="surname">Фамилия</label>
-                                <input class="input_style" id="surname" type="text">
+                                <input class="input_style" id="surname" name="surname" type="text">
                             </div>
 
                             <div class="item_reg">
                                 <label for="email">Email</label>
-                                <input class="input_style" id="email" type="email">
+                                <input class="input_style" id="email" name="email" type="email">
                             </div>
 
                             <div class="item_reg">
                                 <label for="phone">Телефон</label>
-                                <input class="input_style" id="phone" type="number">
+                                <input class="input_style" id="phone" name="phone" type="number">
                             </div>
                         </div>
 
@@ -59,7 +59,7 @@
                         <div class="items">
                             <div class="item_deli">
                                 <label for="country">Страна</label>
-                                <input class="input_style" list="country" type="text">
+                                <input class="input_style" list="country" name="country" type="text">
                                 <!--<input list="OWNER" value="" type="text" />-->
                                 <datalist class="country_fon" id="country">
                                 <option>Россия
@@ -71,17 +71,17 @@
 
                             <div class="item_deli">
                                 <label for="city">Город</label>
-                                <input class="input_style" id="city" type="text">
+                                <input class="input_style" id="city" name="city" type="text">
                             </div>
 
                             <div class="item_deli">
                                 <label for="index">Почтовый индекс</label>
-                                <input class="input_style" id="index" type="number">
+                                <input class="input_style" id="index" name="index" type="number">
                             </div>
 
                             <div class="item_delivery">
                                 <label for="delivery">Адрес доставки (улица, дом, квартира)</label>
-                                <input class="input_style" id="delivery" type="text">
+                                <input class="input_style" id="delivery" name="delivery" type="text">
                             </div>
                         </div>
 
@@ -97,16 +97,16 @@
 
                     <!--<form action="https://www.bit-by-bit.ru/form-submit">-->
                         <div class="choice_checkbox">
-                            <div>
-                                <input class="checkbox" type="checkbox" id="contactChoice1" name="">
-                                <label for="contactChoice1">По Email</label>
+                            <div class="checkbox_form">
+                                <input class="checkbox" type="checkbox" id="contactChoice1" name="email">
+                                <label for="contactChoice1" >По Email</label>
                             </div>
-                            <div>
-                                <input class="checkbox" type="checkbox" id="contactChoice2" name="">
+                            <div class="checkbox_form">
+                                <input class="checkbox" type="checkbox" id="contactChoice2" name="sms">
                                 <label for="contactChoice2">По SMS</label>
                             </div>
-                            <div>
-                                <input class="checkbox" type="checkbox" id="contactChoice3" name="">
+                            <div class="checkbox_form">
+                                <input class="checkbox" type="checkbox" id="contactChoice3" name="Push">
                                 <label for="contactChoice3">Push-уведомления в приложении</label>
                             </div>
                         </div>
